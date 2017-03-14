@@ -59,7 +59,8 @@
     \includegraphics[scale=.6]{basic_1.png}
   \end{center}
   \item \textbf{Results:} The results approximately matched what we expected.
-  \item \textbf{Best ratings:} With the exception of Star Wars, none of the top 10 movies with the highest number of ratings overlapped with the top 10 highest average-rated movies. This is perhaps unexpected. To visualize the highest average-rating movies, we decided to use the size of the line to indicate the number of ratings for the film. This visualization method really shows how much Star Wars stands out. In order to acquire this list, we did not include films with fewer than 50 ratings, which removed 
+  \item \textbf{Best ratings:} With the exception of Star Wars, none of the top 10 movies with the highest number of ratings overlapped with the top 10 highest average-rated movies. This is perhaps unexpected. To visualize the highest average-rating movies, we decided to use the size of the line to indicate the number of ratings for the film. This visualization method really shows how much Star Wars stands out. In order to acquire this list, we did not include films with fewer than 50 ratings, which removed films receiving one/two five star rating (and thus
+  having a very high average of five stars.)
   \begin{center}
     \includegraphics[scale=.5]{basic_2.png} \\
     \includegraphics[scale=.4]{basic_3.png}
@@ -81,8 +82,17 @@
 % - Did you make any other significant modifications or additions
 \begin{itemize}
   \item \textbf{Adjustment of parameters:}
+    We used an $\eta$ of $0.01$, and regularization constant of
+    $\lambda = 10^{-3}$.
   \item \textbf{Justification of parameters and stopping criteria:}
+    We attempted a grid search with $\eta=0.1, 0.01, 0.001$, and
+    $\lambda = 10^{-2}, 10^{-3}, 10^{-4}$. And found that the lowest loss was
+    encountered at $\eta=0.01$ and $\lambda = 10^{-3}$. We chose to center the
+    grid search at $\eta=0.01$ and $\lambda = 10^{-3}$ because those were the
+    parameters we used for $K=20$ on assignment 6.
   \item \textbf{Significant modifications:}
+    No significant modifications were made. We used the homework solutions as
+    our code to obtain $U$ and $V$.
 \end{itemize}
 
 
