@@ -95,10 +95,23 @@
 % - What was expected and what was surprising from the visualizations?
 % - Any other comparisons/observations
 \begin{itemize}
-  \item \textbf{Observations:} 
-  \item \textbf{Best ratings:}
-  \item \textbf{Three genres:}
-  \item \textbf{Expected, and unexpected:}
+  \item \textbf{Observations:} We observed that the matrix factorization method revealed unexpected relationships between some movies. 
+  \item \textbf{Best/most ratings:} In the top 10 most rated films, there is a marked clustering of 8 of the 10 movies - \textit{Return of the Jedi} and \textit{Contact} are outliers. The distance of \textit{Return of the Jedi} may not be unexpected, due to the remarkable popularity and high ratings that the Star Wars franchise has enjoyed, in general. \textit{Contact} is a 1997 science fiction drama film based on the writings of Carl Sagan. In retrospect, it might be better to plot the two following graphs on the same chart, to tell us more about their respective positions. Either that, or fix the axis. 
+  \begin{center}
+    \includegraphics[scale=.45]{mat_fac_2.png}
+    \includegraphics[scale=.45]{mat_fac_3.png}
+  \end{center}
+  \item \textbf{Three genres:} We sampled films from Romance, SciFi, and Thriller. There appears to be some mild to moderate clustering of points, but the films are overall hard to distinguish from location alone, by human eye.
+  \begin{center}
+    \includegraphics[scale=.45]{mat_fac_4.png}
+  \end{center}
+  \item \textbf{Expected, and unexpected:} We expected more demonstrable clustering of points in the three genres. We also noticed that \textit{Gattaca} and \textit{Star Wars} were very, very close together, as well as a handful of other movie pairings. We guess that this makes a statement on the similarities of the movies. However, this one makes more sense than some other film pairings. Some pairs are:
+  \begin{itemize}
+    \item \textit{Gattaca} and \textit{Star Wars} (A 1997 science fiction biopunk and a 1977 space opera epic)
+    \item \textit{Screamers} and \textit{20,000 Leagues Under the Sea} (A 1995 dystopian science fiction and a 1954 Technicolor science fiction)
+    \item \textit{Aliens} and \textit{Notorious} (A 1986 science fiction action horror and a 200biographical drama about Notorious B.I.G.)
+  \end{itemize}
+  Weirdly, all of the above are SciFi, with the exception of Notorious, which was a Thriller.
 \end{itemize}
 
 
@@ -109,7 +122,7 @@
 % - Briefly summarize your main observations
 % - Did your visualizations help you to better understand the MovieLens dataset?
 \begin{itemize}
-  \item \textbf{Summary:}
+  \item \textbf{Summary:} Our main observations were that `top-rated' and `best-rated' movies tend to be two very different things. Moreover, the matrix factorization revealed unusual relationships between certain movies. 
   \item \textbf{Did it help?:} The visualizations helped us better understand the MovieLens dataset. 
 \end{itemize}
 
